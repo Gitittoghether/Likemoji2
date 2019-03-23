@@ -1,0 +1,69 @@
+.tempVideoFix {
+  top: -29px;
+}
+
+.startPhoneDisplay {
+	width: 240px;
+	height: 426px;
+	background-color: gray;
+	overflow-y:hidden;
+	/*overflow: overlay;*/
+
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+
+  transform: translate(-50%, -62%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.phone {
+    width: 280px;
+    position: relative;
+    padding: 0px;
+    margin: auto;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+   /* margin-top: 8px;*/
+}
+
+
+.content3img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+/*.p-top-100 {
+    padding-top: 0px;
+}*/
+
+.bg-likemojiwhat{
+	background: #eb2f5b;
+
+/*  background: #b42feb;*/
+}
+
+.content-txt-white {
+	color: white;
+}
+
+.popColor {
+  color: #ffff4e;
+}
+
+
+
+.popColor2 {
+  color: #00affb;
+}
+
+.btn-try {
+  /*width: 100px;
+  height: 40px;
+  border-radius: 5px;*/
+  background-color: #00affb;
+  margin-top: 20px;
+  border: 2px solid white;
+}
