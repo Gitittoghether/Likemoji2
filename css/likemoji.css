@@ -42,7 +42,9 @@
 .bg-likemojiPink{
 	background: #eb2f5b;
 
-/*  background: #b42feb;*/
+  /*background: #353535;*/
+
+  /*background: #b42feb;*/
 }
 
 .bg-likemojiLightBlue{
@@ -86,6 +88,7 @@
   display: block;
   margin-right:auto;
   margin-left: auto;
+
 
 }
 
