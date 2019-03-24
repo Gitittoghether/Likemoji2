@@ -39,18 +39,34 @@
     padding-top: 0px;
 }*/
 
-.bg-likemojiwhat{
+.bg-likemojiPink{
 	background: #eb2f5b;
 
 /*  background: #b42feb;*/
 }
+
+.bg-likemojiLightBlue{
+  background: #17BEBB;
+
+}
+
+.bg-likemojiTan{
+  background: #fffcec;
+
+}
+
+.bg-likemojiWhite{
+  background: #e5feff;
+
+}
+
 
 .content-txt-white {
 	color: white;
 }
 
 .popColor {
-  color: #fed841;
+  color: #fcff56;
 }
 
 
@@ -79,7 +95,7 @@
 
 .kioskImg {
 
-  width: 80%;
+  width: 70%;
   border-radius: 10px;
 
 }
@@ -103,4 +119,7 @@ hr  {
   margin-bottom: 30px;
 }
 
+.bg-yellow {
+    background-color: #3cff5d;
+}
 
