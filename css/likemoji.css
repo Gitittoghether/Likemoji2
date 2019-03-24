@@ -67,3 +67,27 @@
   margin-top: 20px;
   border: 2px solid white;
 }
+
+.kioskImg {
+
+  width: 80%;
+  border-radius: 10px;
+
+}
+
+.liststyle {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #00affb;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+hr  {
+   width: 60%;
+   border: 1px solid #00affb;
+ 
+}
+.bg-yellow {
+    background-color: #ffff4e;
+}
