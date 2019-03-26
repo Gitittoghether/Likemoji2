@@ -3,7 +3,7 @@
 }*/
 
 .startPhoneDisplay {
-	width: 254px;
+	width: 250px;
 /*	height: 426px;*/
 	background-color: gray;
 	overflow-y:hidden;
@@ -12,7 +12,7 @@
 	position: absolute;
   	top: 50%;
   	left: 50%;
-    border-radius: 34px!important;
+    border-radius: 30px!important;
 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
