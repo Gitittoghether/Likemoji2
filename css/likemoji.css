@@ -125,6 +125,10 @@ hr  {
   margin-bottom: 30px;
 }
 
+.bottomPad {
+  margin-bottom: 60px;
+}
+
 .bg-yellow {
     background-color: #3cff5d;
 }
