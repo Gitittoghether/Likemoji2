@@ -133,3 +133,10 @@ hr  {
     background-color: #3cff5d;
 }
 
+.profile {
+
+  width: 100%;
+  border:5px solid #ff3366;
+  border-radius: 50%;
+}
+
