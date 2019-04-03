@@ -49,8 +49,9 @@
   /*background: #b42feb;*/
 }
 
-.bg-likemojiLightBlue{
-  background: #17BEBB;
+.bg-likemojiGreen{
+  background: #4cdcb4;
+/*  background: #00d4ab;*/
 
 }
 
@@ -77,6 +78,10 @@
 
 .popColor2 {
   color: #00affb;
+}
+
+.popColor3 {
+  color: #fff4cb;
 }
 
 .btn-try{
@@ -120,6 +125,13 @@ hr  {
  
 }
 
+.althr  {
+   width: 60%;
+   border: 1px solid #fff4cb;
+   margin-bottom: 40px;
+ 
+}
+
 .extraPad {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -136,7 +148,11 @@ hr  {
 .profile {
 
   width: 100%;
-  border:5px solid #ff3366;
+  border:5px solid #fff4cb;
   border-radius: 50%;
+}
+
+.font600 {
+  font-weight: 600;
 }
 
