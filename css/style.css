@@ -4666,3 +4666,28 @@ a.share-ico:hover {
 nav a#pull {  
     display: none;  
 } 
+
+/* Custom */
+#hr-1 {
+  background-image: url(../images/hr-hero.jpg);
+  background-position: bottom center;
+  padding-top: 160px;
+  padding-bottom: 50px;  
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.flex-caption {
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: #4ba5f8;
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
