@@ -476,6 +476,20 @@
 			}
 		});	
 
+		/*----------------------------------------------------*/
+		/*	 HR Slides Rotator Flexslider
+		/*----------------------------------------------------*/
+
+		$('#hr-slides').flexslider({
+      animation: "slide",
+      controlNav: false,
+			directionNav: false,  
+			slideshowSpeed: 5500,   
+			animationSpeed: 1500,  
+			start: function(slider){
+				$('body').removeClass('loading');
+			}
+		});	
 
 		/*----------------------------------------------------*/
 		/*	Contact Form Validation
