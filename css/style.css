@@ -4696,5 +4696,9 @@ nav a#pull {
   color: #fff;
   font-size: 16px;
   line-height: 18px;
+  font-weight: bold;
 }
 
+.hero-txt p.p-md {
+  font-weight: bold;
+}
