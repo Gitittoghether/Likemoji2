@@ -4689,6 +4689,13 @@ nav a#pull {
   padding-bottom: 50px;  
 }
 
+#customer-1 {
+  background-image: url(../images/likemojiimages/customer-hero.jpg);
+  background-position: bottom center;
+  padding-top: 160px;
+  padding-bottom: 50px;  
+}
+
 #owl-demo .item img{
     display: block;
     width: 100%;
