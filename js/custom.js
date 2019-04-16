@@ -513,14 +513,14 @@
 					},
 					messages:{
 							name:{
-								required: "Please enter no more than (1) characters"
+								required: "Please enter more than (1) character"
 							}, 
 							email:{
 								required: "We need your email address to contact you",
 								email: "Your email address must be in the format of name@domain.com"
 							}, 
 							message:{
-								required: "Please enter no more than (2) characters"
+								required: "Please enter more than (2) characters"
 							}, 
 						}
 		});	
@@ -548,14 +548,14 @@
 					},
 					messages:{
 							name:{
-								required: "Please enter no more than (1) characters"
+								required: "Please enter more than (1) character"
 							}, 
 							email:{
 								required: "We need your email address to contact you",
 								email: "Your email address must be in the format of name@domain.com"
 							}, 
 							message:{
-								required: "Please enter no more than (2) characters"
+								required: "Please enter more than (2) characters"
 							}, 
 						}
 		});
@@ -583,7 +583,7 @@
 					},
 					messages:{
 							name:{
-								required: "Please enter no more than (1) characters"
+								required: "Please enter more than (1) characters"
 							}, 
 							email:{
 								required: "We need your email address to contact you",
