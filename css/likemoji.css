@@ -163,5 +163,65 @@ hr  {
   font-weight: 600;
 }
 
+.InlineInput {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 8px;
+  padding-bottom: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fcff56;
+  border: 0;
+  border-bottom: 2px dotted #fcff56;
+  outline: none;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 500; }
 
+
+
+  .InlineInput:focus {
+    border-bottom: 2px solid #fcff56; }
+  .InlineInput:hover {
+    border-bottom-color: #fcff56; }
+  .InlineInput::-webkit-input-placeholder, .InlineInput::-webkit-input-placeholder {
+    font-size: 0.875em;
+    font-weight: 300;
+    padding-top: 3px; }
+  .InlineInput::-webkit-input-placeholder, .InlineInput::placeholder {
+    font-size: 0.875em;
+    font-weight: 300;
+    padding-top: 3px; }
+  .InlineInput:-webkit-autofill {
+    border-bottom: 2px dotted #fcff56;
+    box-shadow: inset 0 0 0 9999px white;
+    -webkit-text-fill-color: #ff8d6a; }
+    .InlineInput:-webkit-autofill:focus {
+      border-bottom: 1px solid #fcff56; }
+  .InlineInput::-moz-selection {
+    color: white !important;
+    background-color: rgba(255, 141, 106, 0.8);
+    -webkit-text-fill-color: white !important; }
+  .InlineInput::selection {
+    color: white !important;
+    background-color: rgba(255, 141, 106, 0.8);
+    -webkit-text-fill-color: white !important; }
+  .InlineInput::-webkit-inner-spin-button, .InlineInput[type='number']::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none; }
+
+  .biggerFont {
+      font-size: 2em;
+    }
+
+  .smallerFont {
+      font-size: .5em;
+    }
+
+  .font400 {
+    font-weight: 400;
+  }
 
