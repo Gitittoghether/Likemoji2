@@ -649,5 +649,9 @@
 //transition test
 
 $( ".cta" ).click(function() {
+	$( ".transition").show();
   $( ".transition").toggleClass( "anim-trans" );
+
+  setTimeout(function() { $( ".transition").hide(); }, 5000);
+
 });
