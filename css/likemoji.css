@@ -50,7 +50,9 @@
 }
 
 .bg-likemojiGreen{
-  background: #4cdcb4;
+/*  background: #4cdcb4;*/
+/*  background: #32433f;*/
+  background: #262f2d;
 /*  background: #00d4ab;*/
 
 }
@@ -181,6 +183,27 @@ hr  {
   font-size: 1em;
   font-weight: 500; }
 
+  .selectBox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 8px;
+  padding-bottom: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fcff56;
+  border: 0;
+  border-bottom: 2px dotted #fcff56;
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 500; }
+
+
+
 
 
   .InlineInput:focus {
@@ -224,4 +247,44 @@ hr  {
   .font400 {
     font-weight: 400;
   }
+
+
+/*shark stuff*/
+.transition {
+  position:absolute;
+  height:100%;
+  width:30%;
+
   
+  transform: skewX(-5deg) translateX(300%);
+  transition:2s all ease-in-out;
+  -webkit-transition:2s all ease-in-out;
+}
+
+
+
+
+.anim-trans {
+  animation: anim 3s ease-in-out;
+  }
+
+@keyframes anim{
+     0% { }
+     20%  { z-index:11; transform: skewX(0deg) translateX(100%); }
+
+ width:50%;z-index:11; }
+/*     80%   { transform: skewX(0deg) translateX(100%);
+ width:60%;z-index:11; }
+     100%   { transform: skewX(-5deg) translateX(300%);
+ width:30%;z-index:1; }*/
+}
+
+.shark {
+  width: 60%;
+  margin-top: 15%;
+  margin-left: 20%;
+}
+
+.awesome {
+  margin-top: 23%;
+}
