@@ -261,22 +261,15 @@ hr  {
   -webkit-transition:2s all ease-in-out;
 }
 
-
-
-
 .anim-trans {
   animation: anim 3s ease-in-out;
   }
 
-@keyframes anim{
+  @keyframes anim{
      0% { }
      20%  { z-index:11; transform: skewX(0deg) translateX(100%); }
 
  width:50%;z-index:11; }
-/*     80%   { transform: skewX(0deg) translateX(100%);
- width:60%;z-index:11; }
-     100%   { transform: skewX(-5deg) translateX(300%);
- width:30%;z-index:1; }*/
 }
 
 .shark {

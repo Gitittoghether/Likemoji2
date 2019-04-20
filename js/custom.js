@@ -650,8 +650,6 @@
 
 $( ".cta" ).click(function() {
 	$( ".transition").show();
-  $( ".transition").toggleClass( "anim-trans" );
-
-  setTimeout(function() { $( ".transition").hide(); }, 5000);
-
+    $( ".transition").toggleClass( "anim-trans" );
+     setTimeout(function() { $( ".transition").hide(); }, 5000);
 });
