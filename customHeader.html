@@ -79,6 +79,8 @@
 		<!-- Likemoji Custom CSS -->
 		<link href="css/likemoji.css" rel="stylesheet">
 
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Black+Ops+One|Bungee+Inline|Fredericka+the+Great|Monoton|Overlock|Staatliches|Unica+One" rel="stylesheet">
+
 	
 
 	</head>
@@ -180,30 +182,89 @@
 						<div class="row d-flex align-items-center">
 
 							<!-- CONTENT TXT -->
-							<div class="col-md-6 ct-4-col ">
+							<div class="col-md-7 ct-4-col ">
 								<div  style="text-align:center" class="content-txt-white">
 
 						 			<!-- Title -->
 									<h3 class="h3-xl wow fadeInUp content-txt-white " data-wow-delay="0.4s">
-									   NAME & DESIGN YOUR <span class="popColor" data-wow-delay="0.1s">CHANNEL</span>
+									   NAME & <span class="popColor" data-wow-delay="0.1s">DESIGN</span> YOUR NEW CHANNEL
 									</h3>
 
 
 									<form  class="wow fadeInUp biggerFont font400" data-wow-delay="0.6s">
 									  
-									    <label class=for="exampleInputEmail1">Name:</label>
-									    <input  class="InlineInput" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ie: Awesome Co.">
+									    <label class=for="exampleInputEmail1">Channel Name:</label>
+									    <input  id="orgName" class="InlineInput" type="email" aria-describedby="emailHelp" placeholder="ie: Awesome">
 									    <small id="emailHelp" class="form-text text-muted smallerFont">This is the channel name your employees will see.</small>
+
+
+									    <label class=for="exampleInputEmail1">Extra Text:</label>
+									    <input  id="orgName2" class="InlineInput" type="email" aria-describedby="emailHelp" placeholder="Co.">
+									    <small id="emailHelp" class="form-text text-muted smallerFont">*optional</small>
+
+
+
+
+									<!--     <form>
+											<div class="form-group">
+												<label for="organizationName2">line two</label>
+												<input type="string" class="form-control" id="orgName2" placeholder="Organization Name">
+											</div>
+											<button id="next" type="button" class="btn btn-default">next</button>
+											<button id="export" type="button" class="btn btn-default">export</button>
+										</form> -->
+
+
+								<!-- 	    <span>Select a few feedback topics to add:</span><br><br>
+									    <div style="text-align:left">
+
+										    <div class="form-check">
+											  <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+											  <label class="form-check-label" for="defaultCheck1">Workplace Atmosphere</label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+											  <label class="form-check-label" for="defaultCheck1">Training</label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+											  <label class="form-check-label" for="defaultCheck1">Operations</label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+											  <label class="form-check-label" for="defaultCheck1">Communication</label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+											  <label class="form-check-label" for="defaultCheck1">Meetings</label>
+											</div>
+											<div class="form-check">
+											  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+											  <label class="form-check-label" for="defaultCheck1">Events</label>
+											</div>
+										</div> -->
+
+									  <div class="form-group">
+									    <label for="exampleFormControlSelect1">I want to</label>
+									
+										    <select class="selectBox" id="verticalSelect">
+										      <option>use this template</option>
+										      <option>select another template</option>
+										      <option>start from scratch</option>
+										    </select>
+										    <span class="popColor fa fa-caret-down"></span>
+										    <small id="emailHelp" class="form-text text-muted smallerFont">You can always edit / customize your channel more later :)</small>
+									  </div>
 
 									   <div class="form-group">
 									    <label for="exampleFormControlSelect1">I want to</label>
 									
 										    <select class="selectBox" id="verticalSelect">
-										      <option>Use This Theme</option>
-										      <option>Customize This Theme</option>
-										      <option>Start From Scratch</option>
+										      <option>use this theme</option>
+										      <option>customize this theme</option>
 										    </select>
 										    <span class="popColor fa fa-caret-down"></span>
+										    <small id="emailHelp" class="form-text text-muted smallerFont">You can always edit / customize your channel more later :)</small>
 									  </div>
 
 
@@ -215,17 +276,30 @@
 
 
 							<!-- CONTENT IMAGE -->
-							<div class="col-md-6">
+							<div class="col-md-5">
 
 								<div class="wow fadeInUp" data-wow-delay="0.4s">
 									<!-- <img class="img-fluid" src="images/image-13.png" alt="content-image">
  -->
 									<div class="phone">
 											<img class="phone" src="images/likemojiimages/likemoji-iphoneX.png">
-						  					<div class="startPhoneDisplay scroll">
+						  					<div class="startPhoneDisplay scroll" style="display:none">
 						  						<video class="video-fluid z-depth-1 embed-responsive tempVideoFix" autoplay loop muted playsinline>
 													<source src="images/likemojiimages/coffee.mp4" type="video/mp4" />
 												</video>
+						  					</div>
+
+						  					<div class="startPhoneDisplay scroll">
+						  						<div>
+						  							<div>
+						  								<canvas  id="firstCanvas" width="250px" height="142px"></canvas>
+						  							</div>
+						  							<div id="callToAction1" class="callToAction">Tell Us How You Feel!</div>
+						  							<div class="categoryWikiView">
+						  								<canvas   id="secondCanvas" width="250px" height="62px"></canvas>
+						  							</div>
+						  							
+						  						</div>
 						  					</div>
 					  					</div>
 								</div>
@@ -392,6 +466,12 @@
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="js/wow.js"></script>
+
+		<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+		<script type="text/javascript" src="js/fabric.min.js"></script>
+		<script type="text/javascript" src="js/likemojiFabric.js"></script>
+		<script type="text/javascript" src="js/filesaver.min.js"></script>
 
 		<!-- Custom Script -->
 		<script src="js/custom.js"></script>
