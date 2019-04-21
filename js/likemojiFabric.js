@@ -133,9 +133,9 @@ canvas.renderAll();
 })
 
 
-$( "#backgroundColor" ).change(function(event) {
-	$("#phoneDisplay").css("background-color", "#" + $("#backgroundColor").val());
-});
+// $( "#backgroundColor" ).change(function(event) {
+// 	$("#phoneDisplay").css("background-color", "#" + $("#backgroundColor").val());
+// });
 
 
 var rect = new fabric.Rect({
