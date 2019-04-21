@@ -261,6 +261,10 @@ hr  {
   font-weight: 700;
   color: white;
 }
+.timeBatt {
+  background-color: #1d2c50;
+  height: 32px;
+}
 
 .categoryWikiView {
   background: white;

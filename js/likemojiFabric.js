@@ -14,16 +14,18 @@ var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-149736675403
 	// img.set('height, 142px');
 
 
+
    }, {
       crossorigin: 'Anonymous'
     });
 
 
-var myimg = fabric.Image.fromURL("https://i.ytimg.com/vi/Pnhxz0learg/maxresdefault.jpg", function(img) {
+var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80", function(img) {
 	canvas2.add(img);
 	img.sendToBack();
 	img.scaleToWidth(250);
-	
+
+
 
 
 
@@ -161,9 +163,6 @@ var rect2 = new fabric.Rect({
 });
 
 var lineOne = new fabric.Text(name, {
-	// left: 100,
-	// top: 160,
-
 	top: -2,
 	originX: 'center',
     originY: 'center',
@@ -174,8 +173,6 @@ var lineOne = new fabric.Text(name, {
 });
 
 var lineTwo = new fabric.Text(name2, {
-	// left: 100,
-	// top: 160,
 	top: 32,
 	originX: 'center',
     originY: 'center',
@@ -187,7 +184,7 @@ var lineTwo = new fabric.Text(name2, {
 
 
 var group = new fabric.Group([ rect , lineOne], {
-  originX: 'center',
+    originX: 'center',
     originY: 'center',
 
 });
@@ -203,7 +200,7 @@ var masterGroup = new fabric.Group([group2, group ], {
   left: 0,
   top: 0,
   width:250,
-	height:142,
+  height:142,
 
 
 });
