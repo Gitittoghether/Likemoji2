@@ -20,10 +20,11 @@ var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-149736675403
     });
 
 
-var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-1511649475669-e288648b2339?ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80", function(img) {
+var myimg = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2246&q=80", function(img) {
 	canvas2.add(img);
 	img.sendToBack();
 	img.scaleToWidth(250);
+	img.center();
 
 
 

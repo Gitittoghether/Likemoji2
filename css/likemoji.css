@@ -271,6 +271,15 @@ hr  {
   padding-top: 1px;
 }
 
+.phoneBody {
+  height: 270px;
+  background-color: white;
+}
+
+.phoneNav {
+  height: 60px;
+  background-color: #1d2c50;
+}
 
 
 
