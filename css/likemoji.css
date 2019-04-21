@@ -276,9 +276,17 @@ hr  {
   background-color: white;
 }
 
-.phoneNav {
+.navBar {
   height: 60px;
+  width: 100%;
   background-color: #1d2c50;
+  position: absolute;
+  bottom:   0px;
+  padding: 5px;
+}
+.navIcons {
+  margin-left: 27px;
+  margin-right: 27px;
 }
 
 
