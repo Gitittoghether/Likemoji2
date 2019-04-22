@@ -11,24 +11,17 @@ var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-149736675403
 	canvas.add(img);
 	img.sendToBack();
 	img.scaleToWidth(250);
-	// img.set('height, 142px');
-
-
 
    }, {
       crossorigin: 'Anonymous'
     });
 
 
-var myimg = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2246&q=80", function(img) {
+var myimg2 = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2246&q=80", function(img) {
 	canvas2.add(img);
 	img.sendToBack();
 	img.scaleToWidth(250);
 	img.center();
-
-
-
-
 
    }, {
       crossorigin: 'Anonymous'
@@ -60,45 +53,48 @@ $("#orgName").keyup(function() {
 	canvas.renderAll();
 
 })
-$("#orgName").change(function() {
-	name = $("#orgName").val();
+// $("#orgName").change(function() {
+// 	name = $("#orgName").val();
 
-	canvas.renderAll();
-})
+// 	canvas.renderAll();
+// })
 
-$("#next").click(function() {
+// $("#next").click(function() {
 
-	//I think I need to preload fonts for this to work.. not sure what the problem is...
+// 	//I think I need to preload fonts for this to work.. not sure what the problem is...
 
-	console.log('clicked order');
-	order = fonts.indexOf(font);
+// 	console.log('clicked order');
+// 	order = fonts.indexOf(font);
 
-	if (order<fonts.length-1) {
+// 	if (order<fonts.length-1) {
 
-		order = order + 1;
+// 		order = order + 1;
 
-		console.log(order + ' ' + fonts.length);
-	} else {
-		order = 0;
-	}
+// 		console.log(order + ' ' + fonts.length);
+// 	} else {
+// 		order = 0;
+// 	}
 
 
 	
 
 
-	font = fonts[order];
-	lineOne.set('fontFamily', font);
-	lineOne.set('originX', 'center');
-	lineOne.set('originY', 'center')
+// 	font = fonts[order];
 
 
-	rect.set('width', lineOne.width +20);
-	rect.set('height', lineOne.height +10);
-	group.set('width', lineOne.width +20);
-	group.set('height', lineOne.height +10);
-	canvas.renderAll();
 
-})
+// 	lineOne.set('fontFamily', font);
+// 	lineOne.set('originX', 'center');
+// 	lineOne.set('originY', 'center')
+
+
+// 	rect.set('width', lineOne.width +20);
+// 	rect.set('height', lineOne.height +10);
+// 	group.set('width', lineOne.width +20);
+// 	group.set('height', lineOne.height +10);
+// 	canvas.renderAll();
+
+// })
 
 
 
@@ -125,13 +121,14 @@ group.set('height', lineTwo.height +10);
 
 canvas.renderAll();
 
-})
+});
+
 $("#orgName2").change(function() {
 name2 = $("#orgName2").val();
 
 canvas.renderAll();
 
-})
+});
 
 
 // $( "#backgroundColor" ).change(function(event) {
@@ -155,7 +152,6 @@ var rect = new fabric.Rect({
 
 var rect2 = new fabric.Rect({
 	top: 30,
-
 	originX: 'center',
     originY: 'center',
 	fill: 'whitesmoke',
@@ -203,10 +199,10 @@ var masterGroup = new fabric.Group([group2, group ], {
   width:250,
   height:142,
 
-
 });
 
 canvas.add(masterGroup);
+
   
 // canvas.sendToBack(myimg);
 
