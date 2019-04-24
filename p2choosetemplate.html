@@ -52,7 +52,7 @@
 
 		<!-- GOOGLE FONTS -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
 
 		<!-- BOOTSTRAP CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -78,6 +78,8 @@
 
 		<!-- Likemoji Custom CSS -->
 		<link href="css/likemoji.css" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Black+Ops+One|Bungee+Inline|Fredericka+the+Great|Monoton|Overlock|Staatliches|Unica+One" rel="stylesheet">
 
 	
 
@@ -179,70 +181,97 @@
 					<div class="container ">
 						<div class="row d-flex align-items-center">
 
-						<div class="transition" style="display:none">
-							<h3 class="awesome h3-xl popColor">"Awesome!"</h3>
-							<img class="shark" src="images/likemojiimages/shark_PNG18811.png">
-						</div>
-
 							<!-- CONTENT TXT -->
-							<div class="col-md-6 ct-4-col ">
+							<div class="col-md-7 ct-4-col ">
 								<div  style="text-align:center" class="content-txt-white">
 
-									<!-- Section ID -->
-					 				<span  class="extraPad section-id wow fadeInUp popColor" data-wow-delay="0.2s">
-					 				   Great Choice - Welcome to Better Experiences
-					 				   </span>
-
-				
 						 			<!-- Title -->
 									<h3 class="h3-xl wow fadeInUp content-txt-white " data-wow-delay="0.4s">
-									   LET'S GET STARTED <span class="popColor" data-wow-delay="0.1s">CREATING</span> YOUR FIRST CHANNEL
+									   CHOOSE A <span class="popColor" data-wow-delay="0.1s">NAME</span> <BR> & TEMPLATE
 									</h3>
 
 
 									<form  class="wow fadeInUp biggerFont font400" data-wow-delay="0.6s">
 									  
-									    <label class=for="exampleInputEmail1">My email is</label>
-									    <input  class="InlineInput" type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-									    <small id="emailHelp" class="form-text text-muted smallerFont">We'll never share your email with anyone else.</small>
-								
+									    <label class=for="exampleInputEmail1">Channel Name:</label>
+									    <input  id="orgName" class="InlineInput" type="text"  placeholder="ie: XYZ Inc.">
+									    <small  class="form-text text-muted smallerFont">This is the channel name your feedback audience will see.</small>
+
+
+
 									  <div class="form-group">
-									    <label for="exampleInputPassword1">Password</label>
-									    <input type="password" class="InlineInput" id="exampleInputPassword1" placeholder="">
+									    <label for="exampleFormControlSelect1">Choose a Template:</label>
+									
+										    <select class="selectBox" id="verticalSelect">
+										    	<!-- dynamically pull in list -->
+										      <option>employee feedback</option>
+										      <option>other templates</option>
+										      <option>etc</option>
+										    </select>
+										    <span class="popColor fa fa-caret-down"></span>
+										    <small id="emailHelp" class="form-text text-muted smallerFont">You can always edit / customize your channel more later :)</small>
 									  </div>
 
 									   <div class="form-group">
-									    <label for="exampleFormControlSelect1">I want to use Likemoji for </label>
+									    <label for="exampleFormControlSelect1">Choose a Layout </label>
 									
 										    <select class="selectBox" id="verticalSelect">
-										      <option>Human Resources</option>
-										      <option>Customer Experience</option>
-										      <option>Health Care</option>
-										      <option>Hospitality</option>
+
+										    <!-- 	pull in dynamically -->
+										      <option>layout name</option>
+										      <option>layout name</option>
 										    </select>
 										    <span class="popColor fa fa-caret-down"></span>
+										    <small id="emailHelp" class="form-text text-muted smallerFont">You can always edit / customize your channel more later :)</small>
 									  </div>
 
 
 
-										<button type="button" class="btn btn-try cta">Let's Go!</button>
+										<button type="button" class="btn btn-try cta">Next</button>
 									</form>
 								</div>
 							</div>	<!-- END CONTENT TXT -->
 
 
 							<!-- CONTENT IMAGE -->
-							<div class="col-md-6">
+							<div class="col-md-5">
 
 								<div class="wow fadeInUp" data-wow-delay="0.4s">
 									<!-- <img class="img-fluid" src="images/image-13.png" alt="content-image">
  -->
 									<div class="phone">
 											<img class="phone" src="images/likemojiimages/likemoji-iphoneX.png">
-						  					<div class="startPhoneDisplay scroll">
+						  					<div class="startPhoneDisplay scroll" style="display:none">
 						  						<video class="video-fluid z-depth-1 embed-responsive tempVideoFix" autoplay loop muted playsinline>
 													<source src="images/likemojiimages/coffee.mp4" type="video/mp4" />
 												</video>
+						  					</div>
+
+						  					<div class="startPhoneDisplay scroll">
+						  						<div>
+						  							<div id="timeBatt" class="timeBatt"></div>
+						  							<div>
+						  								<canvas  id="firstCanvas" width="250px" height="142px"></canvas>
+						  							</div>
+						  							<div id="callToAction1" class="callToAction">Tell Us How You Feel!</div>
+						  							<div class="phoneBody">
+							  							<div class="categoryWikiView">
+							  								<canvas   id="secondCanvas" width="250px" height="62px"></canvas>
+							  							</div>
+						  							</div>
+						  							<div id="navBar" class="navBar">
+								  						<div id="homeNavButton" class="navIcons" style="display:inline">
+								  							<i style="font-size: 1.3em; color: white;" class="fas fa-home activeNavIcon"></i>
+								  						</div>
+								  						<div id="inboxNavButton" class="navIcons" style="display:inline">
+								  							<i style="font-size: 1.3em; color: white;" class="far fa-envelope"></i>
+								  						</div>
+								  						<div id="profileNavButton" class="navIcons" style="display:inline">
+								  							<i style="font-size: 1.3em; color: white;" class="fas fa-user"></i>
+								  						</div>
+								  					</div>
+						  							
+						  						</div>
 						  					</div>
 					  					</div>
 								</div>
@@ -409,6 +438,12 @@
 		<script src="js/jquery.validate.min.js"></script>
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="js/wow.js"></script>
+
+		<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+		<script type="text/javascript" src="js/fabric.min.js"></script>
+		<script type="text/javascript" src="js/likemojiFabric.js"></script>
+		<script type="text/javascript" src="js/filesaver.min.js"></script>
 
 		<!-- Custom Script -->
 		<script src="js/custom.js"></script>

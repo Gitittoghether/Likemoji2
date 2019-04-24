@@ -203,6 +203,7 @@ var masterGroup = new fabric.Group([group2, group ], {
 
 canvas.add(masterGroup);
 
+
   
 // canvas.sendToBack(myimg);
 
