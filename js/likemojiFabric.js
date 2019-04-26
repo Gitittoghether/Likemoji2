@@ -33,8 +33,8 @@ var myimg2 = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.
 
 
 
-var name = '';
-var name2 = '';
+var name = 'awesome';
+var name2 = 'co';
 var fonts = ['Monoton','Bungee Inline','Staatliches','Overlock','Fredericka the Great','Black Ops One','Audiowide','Unica One'];
 var font = fonts[0];
 var order = 0;
@@ -159,7 +159,10 @@ var rect2 = new fabric.Rect({
 
 });
 
-var lineOne = new fabric.Text(name, {
+
+
+var lineOne = new fabric.Text(name,{
+
 	top: -2,
 	originX: 'center',
     originY: 'center',
@@ -168,6 +171,15 @@ var lineOne = new fabric.Text(name, {
 	fontSize: 24,
 	
 });
+
+	line.set('text', "layout.headline[i].line");
+			line.set('top', "layout.headline[i].top");
+			line.set('originX', "layout.headline[i].originX");
+			line.set('originY', "layout.headline[i].originY");
+			line.set('fill', "layout.headline[i].fill");
+			line.set('fontFamily', "layout.headline[i].fontFamily");
+			line.set('ffontSize', "layout.headline[i].fontSize");
+
 
 var lineTwo = new fabric.Text(name2, {
 	top: 32,
