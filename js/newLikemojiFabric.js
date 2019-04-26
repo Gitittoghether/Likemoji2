@@ -152,7 +152,7 @@ function renderLayout(layoutName,colorWay,font) {
 
 
 
-
+//don't forget about canvas to and from json method to save layouts soon.
 
 var layout = {
 	name: "Awesome Co",
