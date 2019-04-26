@@ -152,33 +152,16 @@ var colorWay = {
 
 
 
-var line0 = new fabric.Text("fabline",{
+var line0 = new fabric.Text("");
 
-
-			
-			
-			top: -2,
-			originX: 'center',
-		    originY: 'center',
-			fill: 'whitesmoke',
-			fontFamily: font,
-			fontSize: 24,
-
-
-			});
-
-
-
-
-
-		// canvas.add(line1);
-		// line1.center()
 
 
 
 function renderLayout(layoutName,colorWay,font) {
 
 	for (var i = 0; i < layout.headline.length; i++) {
+
+		// need to create ui input field
 
 		console.log(layout.headline[i].line)
 
@@ -189,49 +172,16 @@ function renderLayout(layoutName,colorWay,font) {
 		var values = Object.values(layout.headline[i])
 		console.log(values);
 
+
 		
 
-		// create ui input field
-
-		// var line1 = new fabric.Text("hello",{
-
 			for (var j = 0; j < keys.length; j++) {
-				console.log("here")
 
 				line0.set(keys[j], values[j]);
 			};
 
-			// line0.set('text', layout.headline[i].text);
-			// line0.set('top', layout.headline[i].top);
-			// line0.set('originX', layout.headline[i].originX);
-			// line0.set('originY', layout.headline[i].originY);
-			// line0.set('fill', layout.headline[i].fill);
-			// line0.set('fontFamily', layout.headline[i].fontFamily);
-			// line0.set('ffontSize', layout.headline[i].fontSize);
-
-
-
-		
-		// 	top: -2,
-		// 	originX: 'center',
-		//     originY: 'center',
-		// 	fill: 'whitesmoke',
-		// 	fontFamily: font,
-		// 	fontSize: 24,
-
-
-		// 	});
-
-
-
 		canvas.add(line0);
 		line0.center()
-
-
-
-
-
-		// var line + [i] = new fabric.Text(layout.headline[i].line) {
 			
 		};
 	};

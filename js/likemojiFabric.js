@@ -172,13 +172,6 @@ var lineOne = new fabric.Text(name,{
 	
 });
 
-	line.set('text', "layout.headline[i].line");
-			line.set('top', "layout.headline[i].top");
-			line.set('originX', "layout.headline[i].originX");
-			line.set('originY', "layout.headline[i].originY");
-			line.set('fill', "layout.headline[i].fill");
-			line.set('fontFamily', "layout.headline[i].fontFamily");
-			line.set('ffontSize', "layout.headline[i].fontSize");
 
 
 var lineTwo = new fabric.Text(name2, {
