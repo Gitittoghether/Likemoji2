@@ -182,19 +182,32 @@ function renderLayout(layoutName,colorWay,font) {
 
 		console.log(layout.headline[i].line)
 
+		var keys = Object.keys(layout.headline[i])
+		console.log(keys);
+
+
+		var values = Object.values(layout.headline[i])
+		console.log(values);
+
+		
+
 		// create ui input field
 
 		// var line1 = new fabric.Text("hello",{
 
-			
+			for (var j = 0; j < keys.length; j++) {
+				console.log("here")
 
-			line0.set('text', layout.headline[i].line);
-			line0.set('top', layout.headline[i].top);
-			line0.set('originX', layout.headline[i].originX);
-			line0.set('originY', layout.headline[i].originY);
-			line0.set('fill', layout.headline[i].fill);
-			line0.set('fontFamily', layout.headline[i].fontFamily);
-			line0.set('ffontSize', layout.headline[i].fontSize);
+				line0.set(keys[j], values[j]);
+			};
+
+			// line0.set('text', layout.headline[i].text);
+			// line0.set('top', layout.headline[i].top);
+			// line0.set('originX', layout.headline[i].originX);
+			// line0.set('originY', layout.headline[i].originY);
+			// line0.set('fill', layout.headline[i].fill);
+			// line0.set('fontFamily', layout.headline[i].fontFamily);
+			// line0.set('ffontSize', layout.headline[i].fontSize);
 
 
 
@@ -214,7 +227,6 @@ function renderLayout(layoutName,colorWay,font) {
 		canvas.add(line0);
 		line0.center()
 
-		console.log ("here")
 
 
 
@@ -233,7 +245,7 @@ var layout = {
 	//text layout
 	headline: [
 	{
-		line: "Awesome",
+		text: "Awesome",
 		top: -2,
 		originX: "center",
 	    originY: "center",
@@ -241,7 +253,7 @@ var layout = {
 		fontFamily: font,
 		fontSize: 24
 	},{
-		line: "Co",
+		text: "Co",
 		top: 32,
 		originX: "center",
 	    originY: "center",
