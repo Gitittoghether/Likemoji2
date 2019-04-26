@@ -1,3 +1,4 @@
+
 var canvas = new fabric.Canvas('firstCanvas',  {
   preserveObjectStacking: true});
 
@@ -27,22 +28,24 @@ var myimg2 = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.
     });
 
 
-var name = '';
-var name2 = '';
+// var name = '';
+// var name2 = '';
 var fonts = ['Monoton','Bungee Inline','Staatliches','Overlock','Fredericka the Great','Black Ops One','Audiowide','Unica One'];
-var font = fonts[0];
-var order = 0;
+var font = fonts[6];
+// var order = 0;
 
 $("#orgName").keyup(function() {
 
 	name = $("#orgName").val();
 	console.log(name);
 
-	lineOne.set('text', name);
-	rect.set('width', lineOne.width +20);
-	rect.set('height', lineOne.height +10);
-	group.set('width', lineOne.width +20);
-	group.set('height', lineOne.height +10);
+	canvas._objects[1].text = name
+
+	// lineOne.set('text', name);
+	// rect.set('width', lineOne.width +20);
+	// rect.set('height', lineOne.height +10);
+	// group.set('width', lineOne.width +20);
+	// group.set('height', lineOne.height +10);
 
 	canvas.renderAll();
 
@@ -72,64 +75,7 @@ canvas.renderAll();
 });
 
 
-// ******************
 
-function printy() {
-	console.log ("printy")
-};
-
-
-var object1 = {
-
-	name: [{
-		first: "alex",
-		last: "barrett"
-	},{
-		first: "amber",
-		last: "barrett"
-	}],
-	age: 39
-}
-
-var name3 = 'test';
-var name4 = 1;
-
-// var headerCanvas = new fabric.Canvas('headerCanvas',  {
-//   preserveObjectStacking: true});
-
-// var headerCanvasBig = new fabric.Canvas('headerCanvasBig',  {
-//   preserveObjectStacking: true});
-
-// var cat1Canvas = new fabric.Canvas('cat1Canvas',  {
-//   preserveObjectStacking: true});
-
-// var cat1CanvasBig; = new fabric.Canvas('cat1CanvasBig',  {
-//   preserveObjectStacking: true});
-
-// var cat2Canvas = new fabric.Canvas('cat2Canvas',  {
-//   preserveObjectStacking: true});
-
-// var cat2CanvasBig; = new fabric.Canvas('cat2CanvasBig',  {
-//   preserveObjectStacking: true});
-
-// var cat3Canvas = new fabric.Canvas('cat3Canvas',  {
-//   preserveObjectStacking: true});
-
-// var cat3CanvasBig; = new fabric.Canvas('cat3CanvasBig',  {
-//   preserveObjectStacking: true});
-
-// var cat4Canvas = new fabric.Canvas('cat4Canvas',  {
-//   preserveObjectStacking: true});
-
-// var cat4CanvasBig; = new fabric.Canvas('cat4CanvasBig',  {
-//   preserveObjectStacking: true});
-
-// const Theme = Parse.Object.extend("Theme");
-
-// var fabricLayout = theme.attributes.fabricLayout;
-// var colorWay = theme.attributes.colorWay;
-// var fabricFont = theme.attributes.font;
-// var dog = "woof"
 var colorWay = {
 	name: "mohave",
 	//background color for channel
@@ -152,36 +98,54 @@ var colorWay = {
 
 
 
-var line0 = new fabric.Text("");
+// var line0 = new fabric.Text("");
 
-
+var lineText0 = "";
+var lineText2 = "";
+var lineText3 = "";
 
 
 function renderLayout(layoutName,colorWay,font) {
+
+
 
 	for (var i = 0; i < layout.headline.length; i++) {
 
 		// need to create ui input field
 
-		console.log(layout.headline[i].line)
+		var line = new fabric.Text("");
 
 		var keys = Object.keys(layout.headline[i])
 		console.log(keys);
 
-
 		var values = Object.values(layout.headline[i])
 		console.log(values);
 
-
-		
-
 			for (var j = 0; j < keys.length; j++) {
 
-				line0.set(keys[j], values[j]);
+
+				line.set(keys[j], values[j]);
+
 			};
 
-		canvas.add(line0);
-		line0.center()
+			//extends to object method to add name property to object
+
+
+			line.toObject = (function(toObject) {
+			  return function() {
+			    return fabric.util.object.extend(toObject.call(this), {
+			      name: this.name
+			    });
+			  };
+			})(line.toObject);
+
+		canvas.add(line);
+	
+		line.centerH()
+		line.name = layout.headline[i].name;
+
+		canvas.renderAll();
+		
 			
 		};
 	};
@@ -195,16 +159,18 @@ var layout = {
 	//text layout
 	headline: [
 	{
+		name: "line0",
 		text: "Awesome",
-		top: -2,
+		top: 20,
 		originX: "center",
 	    originY: "center",
 		fill: colorWay.textColor1,
 		fontFamily: font,
 		fontSize: 24
 	},{
+		name: "frank",
 		text: "Co",
-		top: 32,
+		top: 50,
 		originX: "center",
 	    originY: "center",
 		fill: colorWay.textColor1,
@@ -215,7 +181,7 @@ var layout = {
 	shapes: [
 	{
 		shape: "rect",
-		top: -5,
+		top: 20,
 		originX: "center",
 	    originY: "center",
 		fill: "accentColor2",
