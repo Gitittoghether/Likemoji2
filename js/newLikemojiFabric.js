@@ -1,13 +1,14 @@
+// $( document ).ready(function() {
+//     testRender()
+// });
 
-var canvas = new fabric.Canvas('firstCanvas',  {
+
+	var canvas = new fabric.Canvas('firstCanvas',  {
   preserveObjectStacking: true});
 
 
-var canvas2 = new fabric.Canvas('secondCanvas',  {
-  preserveObjectStacking: true});
 
-
-var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80", function(img) {
+fabric.Image.fromURL("https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80", function(img) {
 	canvas.add(img);
 	img.sendToBack();
 	img.scaleToWidth(250);
@@ -17,7 +18,12 @@ var myimg = fabric.Image.fromURL("https://images.unsplash.com/photo-149736675403
     });
 
 
-var myimg2 = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2246&q=80", function(img) {
+
+
+
+
+
+fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2246&q=80", function(img) {
 	canvas2.add(img);
 	img.sendToBack();
 	img.scaleToWidth(250);
@@ -31,7 +37,7 @@ var myimg2 = fabric.Image.fromURL("https://images.unsplash.com/3/doctype-hi-res.
 // var name = '';
 // var name2 = '';
 var fonts = ['Monoton','Bungee Inline','Staatliches','Overlock','Fredericka the Great','Black Ops One','Audiowide','Unica One'];
-var font = fonts[6];
+var font = fonts[0];
 // var order = 0;
 
 $("#orgName").keyup(function() {
@@ -89,7 +95,7 @@ var colorWay = {
 	//accent color 3 for use in fabric layout objects
 	accentColor3: "ffffff",
 	//general text color in app channel and for use in layout objects
-	textColor1: "red",
+	textColor1: "blue",
 	//secondary text color for use in layout objects
 	textColor2: "ffffff",
 	//third text color for use in layout objects
@@ -166,7 +172,8 @@ var layout = {
 	    originY: "center",
 		fill: colorWay.textColor1,
 		fontFamily: font,
-		fontSize: 24
+		fontSize: 24,
+		selectable: false
 	},{
 		name: "frank",
 		text: "Co",
@@ -175,7 +182,8 @@ var layout = {
 	    originY: "center",
 		fill: colorWay.textColor1,
 		fontFamily: font,
-		fontSize: 24
+		fontSize: 24,
+		selectable: false
 	}],
 
 	shapes: [
@@ -196,6 +204,18 @@ var layout = {
 
 
 };
+
+
+	$("#export").click(function() {
+		console.log("clicked export");
+		
+
+		$("#firstCanvas").get(0).toBlob(function(blob) {
+			saveAs(blob, "testexport");
+		})
+
+	});
+
 
 
 
